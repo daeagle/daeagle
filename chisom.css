@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body{
+	width: 100%;
+	height: 100%;
+	font-family: Geizer;
+	background-color: #ffffff;
+}
+
+header{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 80px;
+	background: black;
+	position: center;
+	color: white;
+	font-family: geizer;
+	text-align: center;
+	border-bottom: 3px solid black;
+	border-top: 3px solid black; 
+}
+
+.vr {
+    height: 100%;
+    width: 1px;
+    border-left: 2px solid gray;
+    /*display: inline-block;*/    
+    /*margin: 0 auto;*/
+}
+
+header ul{
+	display: block;
+	height: 50px;
+	text-align: center;
+}
+
+header ul li{
+	display: inline-block;
+	height: 70px;
+}
+
+#gradient{
+	background: linear-gradient(left, #ffffff, #7fffd4, #ffffff);
+	background: -moz-linear-gradient(left, #ffffff, #7fffd4, #ffffff);
+	background: -webkit-linear-gradient(left, #ffffff, #7fffd4, #ffffff);
+	background: -o-linear-gradient(left, #ffffff, #7fffd4, #ffffff);
+}
+
+.outerbox {
+	width: 650px;
+	overflow: hidden;
+	margin-left: 20%;
+
+}
+
+.sliderbox {
+	position: relative;
+	width: 2015px;
+	animation-name: chisom;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes chisom {
+	0% {left: 0px;}
+	20% {left: 0px;}
+	25% {left: -500px}
+	45% {left: -500px}
+	50% {left: -1000px}
+	70% {left: -1000px}
+	75% {left: -1500px}
+	95% {left: -1500px}
+	100% {left: -2000px}
+}
+
+#socialicons {
+	display: inline-block;
+	float: left;
+	position: relative;
+}
